@@ -1,23 +1,18 @@
-import { useState } from 'react'
 import './App.css'
-import Card from './Components/Card'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [colorFavorito, setColorFavorito] = useState({
+    form: false,
+    datos: {}
+  })
 
   return (
     <>
-      <div>
+      <div className='App'>
         <h1>Elige un color</h1>
-        <form>{/* aqui deberias escribir tu codigo */}
-          <label></label>
-          <input/>
-          <label></label>
-          <input/>
-          <button type="submit">Enviar</button>
-        </form>
-        
+        <form {setColorFavorito={setColorFavorito}}/>
       </div>
+      {setColorFavorito.form $$ <Card colorFavorito={colorFavorito.datos}/>}
     </>
   )
 }
