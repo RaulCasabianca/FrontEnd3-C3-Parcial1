@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import Form from './Components/Form'
 import Card from './Components/Card'
 
 function App() {
@@ -10,7 +9,14 @@ function App() {
     <>
       <div>
         <h1>Elige un color</h1>
-        <form>{/* aqui deberias escribir tu codigo */}</form>
+        <form>{/* aqui deberias escribir tu codigo */}
+          <label></label>
+          <input/>
+          <label></label>
+          <input/>
+          <button type="submit">Enviar</button>
+        </form>
+        
       </div>
     </>
   )
